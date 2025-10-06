@@ -45,7 +45,36 @@ My personal configuration files for Arch Linux featuring a customized DWM setup 
 
 ## Installation
 
-### Prerequisites
+### Quick Install (Recommended)
+
+**One-line installation on a fresh Arch Linux system:**
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/ind4skylivey/dotfiles/main/bootstrap.sh)
+```
+
+Or clone and run the installer:
+
+```bash
+git clone https://github.com/ind4skylivey/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+./install.sh
+```
+
+The automated installer will:
+- Install all required packages (with confirmation prompts)
+- Back up your existing configurations
+- Create symlinks using GNU Stow
+- Set up plugin managers (Fisher, TPM)
+- Optionally compile DWM and install Doom Emacs
+
+---
+
+### Manual Installation
+
+If you prefer manual control, follow these steps:
+
+#### Prerequisites
 
 ```bash
 # Install required packages
@@ -55,16 +84,27 @@ sudo pacman -S fish zsh neovim kitty alacritty tmux rofi picom dunst btop starsh
 yay -S fastfetch yazi-git zellij
 ```
 
-### Clone Repository
+#### Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/dotfiles.git ~/dotfiles
+git clone https://github.com/ind4skylivey/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ```
 
-### Deploy Configurations
+#### Deploy Configurations
 
-#### Method 1: Manual Symlinks
+##### Method 1: Using GNU Stow (Recommended)
+
+```bash
+# Install GNU Stow
+sudo pacman -S stow
+
+# Stow all configs
+cd ~/dotfiles
+stow .
+```
+
+##### Method 2: Manual Symlinks
 
 ```bash
 # Backup your existing configs
@@ -79,18 +119,7 @@ cp ~/dotfiles/lockscreen.sh ~/lockscreen.sh
 chmod +x ~/lockscreen.sh
 ```
 
-#### Method 2: Using GNU Stow (Recommended)
-
-```bash
-# Install GNU Stow
-sudo pacman -S stow
-
-# Stow all configs
-cd ~/dotfiles
-stow .
-```
-
-### Post-Installation
+#### Post-Installation
 
 #### Fish Shell
 ```bash
