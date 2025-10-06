@@ -4,52 +4,14 @@ This guide documents the complete process of creating, organizing, and pushing y
 
 ## Table of Contents
 
-1. [Initial Problem: Shell Configuration](#initial-problem-shell-configuration)
-2. [Planning the Dotfiles Repository](#planning-the-dotfiles-repository)
-3. [Creating the Repository Structure](#creating-the-repository-structure)
-4. [Git Configuration and Initial Commit](#git-configuration-and-initial-commit)
-5. [Setting Up SSH Authentication](#setting-up-ssh-authentication)
-6. [Pushing to GitHub](#pushing-to-github)
-7. [Future Updates](#future-updates)
-8. [Troubleshooting](#troubleshooting)
 
----
-
-## Initial Problem: Shell Configuration
-
-### Issue
-The `droid` CLI tool was working in Fish shell but not in Bash or Zsh within IntelliJ IDEA's integrated terminal.
-
-### Root Cause
-The issue was that `~/.config/zsh/.zshenv` (which IntelliJ loads) didn't have the PATH configured, while `~/.zshrc` in the home directory did.
-
-### Solution
-Added PATH configuration to `~/.config/zsh/.zshenv`:
-
-```bash
-# Edit the zshenv file
-nano ~/.config/zsh/.zshenv
-
-# Add this content:
-#. "$HOME/.cargo/env"
-
-# Set PATH for all zsh shells (including non-interactive)
-export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
-```
-
-**Why this works:**
-- `.zshenv` is loaded for ALL zsh shells (interactive and non-interactive)
-- IntelliJ's terminal starts non-login shells that don't always source `.zshrc`
-- This ensures PATH is set regardless of how the shell is started
-
-### Testing the Fix
-
-```bash
-# Test in a clean environment
-env -i HOME=/home/il1v3y /bin/zsh -c 'which droid'
-
-# Should output: /home/il1v3y/.local/bin/droid
-```
+1. [Planning the Dotfiles Repository](#planning-the-dotfiles-repository)
+2. [Creating the Repository Structure](#creating-the-repository-structure)
+3. [Git Configuration and Initial Commit](#git-configuration-and-initial-commit)
+4. [Setting Up SSH Authentication](#setting-up-ssh-authentication)
+5. [Pushing to GitHub](#pushing-to-github)
+6. [Future Updates](#future-updates)
+7. [Troubleshooting](#troubleshooting)
 
 ---
 
