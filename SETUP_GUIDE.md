@@ -231,9 +231,7 @@ git commit -m "Initial commit: Arch Linux dotfiles
 - Editors: Neovim, Doom Emacs config
 - Tools: Tmux, Rofi, Picom, Dunst, Btop, Yazi, Zellij
 - Prompt: Starship configuration
-- Scripts: Custom lockscreen script
-
-Co-authored-by: factory-droid[bot] <138933559+factory-droid[bot]@users.noreply.github.com>"
+- Scripts: Custom lockscreen script"
 ```
 
 **Result:**
