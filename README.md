@@ -1,5 +1,20 @@
 # Arch Linux Dotfiles
 
+<div align="center">
+
+![Arch Linux](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=for-the-badge)
+![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)
+![Fish Shell](https://img.shields.io/badge/Fish-black?style=for-the-badge&logo=fishshell&logoColor=white)
+![Zsh](https://img.shields.io/badge/Zsh-black?style=for-the-badge&logo=zsh&logoColor=white)
+![Neovim](https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white)
+![Tmux](https://img.shields.io/badge/Tmux-1BB91F?style=for-the-badge&logo=tmux&logoColor=white)
+![Stars](https://img.shields.io/github/stars/ind4skylivey/dotfiles?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)
+
+</div>
+
+---
+
 My personal configuration files for Arch Linux featuring a customized DWM setup with modern terminal tools and development environments.
 
 ## System Information
