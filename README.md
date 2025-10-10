@@ -133,6 +133,8 @@ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fi
 #### Zsh
 ```bash
 # Zinit will auto-install on first launch
+# Plugins (zsh-autosuggestions, zsh-syntax-highlighting, etc.) are managed by Zinit
+# They are NOT included in the repository and will be downloaded automatically
 # Restart shell after installation
 ```
 
@@ -168,6 +170,7 @@ sudo make clean install
 - **Plugin management** for Fish (Fisher), Zsh (Zinit), and Tmux (TPM)
 - **Modern tooling** with fast, rust-based utilities
 - **Version controlled** for easy deployment across machines
+- **Clean repository** - plugins managed by package managers, not committed to git
 
 ## Customization
 

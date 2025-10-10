@@ -1,5 +1,8 @@
-# Source CachyOS Fish configuration
-source /usr/share/cachyos-fish-config/cachyos-config.fish
+# Source CachyOS Fish configuration (CachyOS-specific)
+# If not using CachyOS, comment out this line or install the cachyos-fish-config package
+if test -f /usr/share/cachyos-fish-config/cachyos-config.fish
+    source /usr/share/cachyos-fish-config/cachyos-config.fish
+end
 
 # Set paths
 set -Ux PATH $HOME/.cargo/bin $PATH
