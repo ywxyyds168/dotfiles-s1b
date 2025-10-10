@@ -204,6 +204,14 @@ Feel free to fork and customize these dotfiles to your needs. Key configuration 
 - Tmux: `.config/tmux/tmux.conf`
 - DWM: `.config/dwm/config.h`
 
+### Keybindings
+
+See **[KEYBINDINGS.md](KEYBINDINGS.md)** for a comprehensive reference of all keybindings, shortcuts, and aliases including:
+- DWM window manager keybindings
+- Tmux terminal multiplexer commands
+- Shell aliases (Fish & Zsh)
+- Zsh-specific keybindings
+
 ## Updates
 
 To update your dotfiles:
