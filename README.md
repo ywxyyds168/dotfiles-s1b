@@ -42,6 +42,7 @@ My personal configuration files for Arch Linux featuring a customized DWM setup 
 
 ### Scripts
 - **lockscreen.sh** - Custom screen locking script
+- **lockscreen-setup.sh** - One-time setup for lockscreen wallpapers
 
 ## Installation
 
@@ -65,8 +66,10 @@ The automated installer will:
 - Install all required packages (with confirmation prompts)
 - Back up your existing configurations
 - Create symlinks using GNU Stow
-- Set up plugin managers (Fisher, TPM)
+- Set up plugin managers (Fisher, TPM, Zinit)
 - Optionally compile DWM and install Doom Emacs
+
+**Note:** After installation, run `./lockscreen-setup.sh` to configure your lockscreen wallpapers.
 
 ---
 
@@ -161,6 +164,9 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 # Compile and install DWM
 cd ~/.config/dwm
 sudo make clean install
+
+# Note: DWM includes custom patches and configuration
+# Review config.h before installation
 ```
 
 ## Key Features
