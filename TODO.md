@@ -1,5 +1,17 @@
 # TODO List
 
+## Recent Updates (Completed)
+
+### Repository Cleanup
+- [x] Remove plugin directories from git tracking (managed by package managers)
+- [x] Update .gitignore to exclude auto-generated files
+- [x] Improve Fish config portability (conditional CachyOS loading)
+- [x] Clean up Starship config (remove unused palette)
+- [x] Add lockscreen setup script
+- [x] Document plugin management in README
+
+---
+
 ## Future Improvements
 
 ### README Enhancements
