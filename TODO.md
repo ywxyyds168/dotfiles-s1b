@@ -44,12 +44,14 @@
   - [x] Keybindings reference (KEYBINDINGS.md)
   - [x] Feature comparison (Shell, Terminal, Editor)
   - [x] Package list
-- [ ] Implement collapsible sections for:
-  - Detailed configuration explanations
-  - Troubleshooting steps
-  - Advanced customization
-- [ ] Add icons and emojis for better visual hierarchy
-- [ ] Center important elements (header, badges)
+- [x] Implement collapsible sections for:
+  - [x] Detailed configuration explanations
+  - [x] Troubleshooting steps (with 6 common issues)
+  - [x] Advanced customization (DWM patches, Starship, Fish, Zsh, Rofi, Picom)
+  - [x] Manual Installation and Post-Installation
+  - [x] Feature Comparison tables (collapsible with open by default)
+- [x] Add icons and emojis for better visual hierarchy
+- [x] Center important elements (header, badges, description)
 
 ### Repository Organization
 - [ ] Add screenshots folder: `screenshots/`

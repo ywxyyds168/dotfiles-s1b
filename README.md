@@ -1,6 +1,6 @@
-# Arch Linux Dotfiles
-
 <div align="center">
+
+# 🐧 Arch Linux Dotfiles
 
 ![Arch Linux](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=for-the-badge)
 ![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)
@@ -11,13 +11,13 @@
 ![Stars](https://img.shields.io/github/stars/ind4skylivey/dotfiles?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)
 
-</div>
-
 ---
 
-My personal configuration files for Arch Linux featuring a customized DWM setup with modern terminal tools and development environments.
+*My personal configuration files for Arch Linux featuring a customized DWM setup with modern terminal tools and development environments.*
 
-## System Information
+</div>
+
+## ⚙️ System Information
 
 - **OS:** Arch Linux (CachyOS)
 - **Kernel:** 6.17.0-3-cachyos
@@ -27,7 +27,7 @@ My personal configuration files for Arch Linux featuring a customized DWM setup 
 - **Editor:** Neovim / Doom Emacs
 - **Multiplexer:** Tmux
 
-## Included Configurations
+## 📦 Included Configurations
 
 | Package | Category | Description | Installation |
 |---------|----------|-------------|--------------|
@@ -57,9 +57,12 @@ My personal configuration files for Arch Linux featuring a customized DWM setup 
 - **install.sh** - Automated installation script with backups
 - **bootstrap.sh** - One-line remote installation script
 
-## Feature Comparisons
+## ⚖️ Feature Comparisons
 
-### Shell: Fish vs Zsh
+<details open>
+<summary><b>🐚 Shell: Fish vs Zsh</b></summary>
+
+<br>
 
 | Feature | Fish | Zsh |
 |---------|------|-----|
@@ -75,7 +78,12 @@ My personal configuration files for Arch Linux featuring a customized DWM setup 
 | **Community** | Growing, modern | Large, established |
 | **Best For** | Interactive use, beginners | Power users, scripting |
 
-### Terminal: Kitty vs Alacritty
+</details>
+
+<details open>
+<summary><b>💻 Terminal: Kitty vs Alacritty</b></summary>
+
+<br>
 
 | Feature | Kitty | Alacritty |
 |---------|-------|-----------|
@@ -92,7 +100,12 @@ My personal configuration files for Arch Linux featuring a customized DWM setup 
 | **Scrollback** | Built-in | Limited (use tmux) |
 | **Best For** | Feature-rich experience | Minimalist speed |
 
-### Editor: Neovim vs Doom Emacs
+</details>
+
+<details open>
+<summary><b>✏️ Editor: Neovim vs Doom Emacs</b></summary>
+
+<br>
 
 | Feature | Neovim | Doom Emacs |
 |---------|--------|------------|
@@ -110,7 +123,9 @@ My personal configuration files for Arch Linux featuring a customized DWM setup 
 | **Configuration Framework** | LazyVim, NvChad, AstroNvim | Doom, Spacemacs |
 | **Best For** | Fast editing, terminal workflow | Writing, org-mode, Lisp development |
 
-## Installation
+</details>
+
+## 🚀 Installation
 
 ### Quick Install (Recommended)
 
@@ -139,7 +154,10 @@ The automated installer will:
 
 ---
 
-### Manual Installation
+<details>
+<summary><b>📖 Manual Installation</b> (Click to expand)</summary>
+
+<br>
 
 If you prefer manual control, follow these steps:
 
@@ -235,7 +253,9 @@ sudo make clean install
 # Review config.h before installation
 ```
 
-## Key Features
+</details>
+
+## ✨ Key Features
 
 - **Unified theme** across terminal, editors, and window manager
 - **Efficient keybindings** optimized for productivity
@@ -244,7 +264,7 @@ sudo make clean install
 - **Version controlled** for easy deployment across machines
 - **Clean repository** - plugins managed by package managers, not committed to git
 
-## Customization
+## 🎨 Customization
 
 Feel free to fork and customize these dotfiles to your needs. Key configuration files:
 
@@ -255,7 +275,7 @@ Feel free to fork and customize these dotfiles to your needs. Key configuration 
 - Tmux: `.config/tmux/tmux.conf`
 - DWM: `.config/dwm/config.h`
 
-### Keybindings
+### 🔑 Keybindings
 
 See **[KEYBINDINGS.md](KEYBINDINGS.md)** for a comprehensive reference of all keybindings, shortcuts, and aliases including:
 - DWM window manager keybindings
@@ -263,7 +283,191 @@ See **[KEYBINDINGS.md](KEYBINDINGS.md)** for a comprehensive reference of all ke
 - Shell aliases (Fish & Zsh)
 - Zsh-specific keybindings
 
-## Updates
+## 🔧 Troubleshooting
+
+<details>
+<summary><b>Common Issues and Solutions</b> (Click to expand)</summary>
+
+<br>
+
+### Shell Not Loading Correctly
+
+**Problem:** Fish or Zsh doesn't load plugins/configuration after installation.
+
+**Solution:**
+```bash
+# For Fish
+fisher update
+
+# For Zsh
+rm -rf ~/.cache/zsh
+source ~/.config/zsh/.zshrc
+```
+
+### DWM Not Compiling
+
+**Problem:** DWM compilation fails with errors.
+
+**Solution:**
+```bash
+# Make sure you have required dependencies
+sudo pacman -S base-devel libx11 libxft libxinerama
+
+# Clean and recompile
+cd ~/.config/dwm
+sudo make clean install
+```
+
+### Tmux Plugins Not Installing
+
+**Problem:** Tmux plugins don't install with `prefix + I`.
+
+**Solution:**
+```bash
+# Ensure TPM is installed
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+
+# Kill tmux server and restart
+tmux kill-server
+tmux
+# Then press: prefix + I
+```
+
+### Doom Emacs Sync Errors
+
+**Problem:** `doom sync` fails or packages don't load.
+
+**Solution:**
+```bash
+# Clean and rebuild
+~/.config/emacs/bin/doom clean
+~/.config/emacs/bin/doom sync -u
+~/.config/emacs/bin/doom build
+```
+
+### Font Rendering Issues
+
+**Problem:** Ligatures or icons not displaying correctly.
+
+**Solution:**
+```bash
+# Install required fonts
+sudo pacman -S ttf-jetbrains-mono nerd-fonts-complete
+
+# Rebuild font cache
+fc-cache -fv
+```
+
+### Lockscreen Not Working
+
+**Problem:** Lockscreen script fails or wallpaper doesn't display.
+
+**Solution:**
+```bash
+# Run the setup script first
+./lockscreen-setup.sh
+
+# Make sure i3lock is installed
+sudo pacman -S i3lock
+
+# Test manually
+./lockscreen.sh
+```
+
+</details>
+
+## ⚙️ Advanced Customization
+
+<details>
+<summary><b>Per-Application Configuration Details</b> (Click to expand)</summary>
+
+<br>
+
+### DWM Custom Patches
+
+This configuration includes the following DWM patches:
+- **Vanitygaps** - Gaps between windows
+- **Systray** - System tray support
+- **Fullscreen** - Proper fullscreen toggle
+- **Pertag** - Per-tag layout settings
+- **Actual Fullscreen** - True fullscreen mode
+
+To add more patches:
+```bash
+cd ~/.config/dwm
+# Download patch file
+curl -O https://dwm.suckless.org/patches/[patch-name]/[patch-file].diff
+# Apply patch
+patch -p1 < [patch-file].diff
+# Rebuild
+sudo make clean install
+```
+
+### Starship Prompt Customization
+
+Edit `starship.toml` to customize your prompt:
+```bash
+# Add custom modules
+[custom.mymodule]
+command = "echo '🚀'"
+when = true
+```
+
+See [Starship docs](https://starship.rs/config/) for more options.
+
+### Neovim Plugin Management
+
+Depending on your Neovim configuration framework:
+- **Lazy.nvim**: Edit `~/.config/nvim/lua/plugins/`
+- **Packer**: Edit `~/.config/nvim/lua/plugins.lua`
+
+### Fish Functions
+
+Add custom Fish functions in `~/.config/fish/functions/`:
+```fish
+# Example: mkcd.fish
+function mkcd
+    mkdir -p $argv[1]
+    cd $argv[1]
+end
+```
+
+### Zsh Custom Aliases
+
+Add aliases to `~/.config/zsh/.zshrc`:
+```zsh
+# Example aliases
+alias ll='ls -lah'
+alias gs='git status'
+alias gp='git push'
+```
+
+### Rofi Themes
+
+Customize Rofi appearance:
+```bash
+# Copy default theme
+mkdir -p ~/.config/rofi
+rofi -dump-config > ~/.config/rofi/config.rasi
+
+# Edit theme
+nvim ~/.config/rofi/config.rasi
+```
+
+### Picom Effects
+
+Adjust transparency and effects in `~/.config/picom/picom.conf`:
+```conf
+# Opacity rules
+opacity-rule = [
+  "95:class_g = 'kitty'",
+  "90:class_g = 'Alacritty'"
+];
+```
+
+</details>
+
+## 🔄 Updates
 
 To update your dotfiles:
 
@@ -272,10 +476,10 @@ cd ~/dotfiles
 git pull origin main
 ```
 
-## License
+## 📝 License
 
 Feel free to use and modify these configurations as you see fit.
 
-## Credits
+## 🙏 Credits
 
 Configuration inspired by the amazing Arch Linux and dotfiles community.
