@@ -364,11 +364,15 @@ fc-cache -fv
 
 **Solution:**
 ```bash
+# Make sure betterlockscreen is installed
+yay -S betterlockscreen
+
+# Create wallpaper directory if it doesn't exist
+mkdir -p ~/Pictures/screenlock
+# Add your wallpaper images to this directory
+
 # Run the setup script first
 ./lockscreen-setup.sh
-
-# Make sure i3lock is installed
-sudo pacman -S i3lock
 
 # Test manually
 ./lockscreen.sh
