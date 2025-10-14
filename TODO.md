@@ -40,10 +40,10 @@
   - Terminal workflow
   - Window manager in action
   - Quick installation process
-- [ ] Add tables for:
-  - Keybindings reference
-  - Feature comparison
-  - Package list
+- [x] Add tables for:
+  - [x] Keybindings reference (KEYBINDINGS.md)
+  - [x] Feature comparison (Shell, Terminal, Editor)
+  - [x] Package list
 - [ ] Implement collapsible sections for:
   - Detailed configuration explanations
   - Troubleshooting steps

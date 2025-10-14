@@ -29,35 +29,86 @@ My personal configuration files for Arch Linux featuring a customized DWM setup 
 
 ## Included Configurations
 
-### Shell & Terminal
-- **Fish** - Modern shell with syntax highlighting and autosuggestions
-- **Zsh** - Powerful shell with Zinit plugin manager and Powerlevel10k
-- **Starship** - Fast, minimal prompt for any shell
-- **Kitty** - GPU-accelerated terminal emulator
-- **Alacritty** - Blazing fast, OpenGL terminal emulator
-- **Tmux** - Terminal multiplexer configuration
-
-### Window Management
-- **DWM** - Suckless dynamic window manager (source code included)
-- **Rofi** - Application launcher and window switcher
-- **Picom** - Compositor for transparency and effects
-- **Dunst** - Lightweight notification daemon
-
-### Development Tools
-- **Neovim** - Hyperextensible Vim-based text editor
-- **Doom Emacs** - Configuration framework for Emacs
-- **Micro** - Modern terminal-based text editor
-
-### System Utilities
-- **Fastfetch** - System information tool
-- **Btop** - Resource monitor
-- **Yazi** - Terminal file manager
-- **Zellij** - Modern terminal workspace
-- **Cava** - Audio visualizer
+| Package | Category | Description | Installation |
+|---------|----------|-------------|--------------|
+| **Fish** | Shell | Modern shell with syntax highlighting and autosuggestions | `pacman` |
+| **Zsh** | Shell | Powerful shell with Zinit plugin manager and Powerlevel10k | `pacman` |
+| **Starship** | Shell Prompt | Fast, minimal, cross-shell prompt | `pacman` |
+| **Kitty** | Terminal | GPU-accelerated terminal emulator with ligatures | `pacman` |
+| **Alacritty** | Terminal | Blazing fast, OpenGL terminal emulator | `pacman` |
+| **Tmux** | Multiplexer | Terminal multiplexer with TPM plugin manager | `pacman` |
+| **DWM** | Window Manager | Suckless dynamic window manager (custom patches) | Manual (source included) |
+| **Rofi** | Launcher | Application launcher and window switcher | `pacman` |
+| **Picom** | Compositor | Lightweight compositor for transparency and effects | `pacman` |
+| **Dunst** | Notifications | Lightweight notification daemon | `pacman` |
+| **Neovim** | Editor | Hyperextensible Vim-based text editor | `pacman` |
+| **Doom Emacs** | Editor | Configuration framework for Emacs | Git (manual install) |
+| **Micro** | Editor | Modern terminal-based text editor | `pacman` |
+| **Fastfetch** | System Info | Fast system information tool | `pacman` / AUR |
+| **Btop** | Monitor | Beautiful resource monitor | `pacman` |
+| **Yazi** | File Manager | Blazing fast terminal file manager (Rust) | AUR (`yazi-git`) |
+| **Zellij** | Workspace | Modern terminal workspace with layout support | AUR |
+| **Cava** | Visualizer | Console-based audio visualizer | `pacman` |
+| **Flameshot** | Screenshots | Powerful screenshot tool | `pacman` |
 
 ### Scripts
-- **lockscreen.sh** - Custom screen locking script
+- **lockscreen.sh** - Custom screen locking script with wallpaper support
 - **lockscreen-setup.sh** - One-time setup for lockscreen wallpapers
+- **install.sh** - Automated installation script with backups
+- **bootstrap.sh** - One-line remote installation script
+
+## Feature Comparisons
+
+### Shell: Fish vs Zsh
+
+| Feature | Fish | Zsh |
+|---------|------|-----|
+| **Syntax Highlighting** | Built-in, out of the box | Via plugin (zsh-syntax-highlighting) |
+| **Auto-suggestions** | Built-in, based on history | Via plugin (zsh-autosuggestions) |
+| **Configuration** | Simple, user-friendly syntax | Traditional shell scripting |
+| **POSIX Compliance** | ❌ Not POSIX compliant | ✅ POSIX compliant |
+| **Learning Curve** | Gentle, beginner-friendly | Steeper, more powerful |
+| **Plugin Manager** | Fisher | Zinit |
+| **Tab Completion** | Excellent, built-in | Excellent, highly customizable |
+| **Startup Speed** | Very fast | Fast (with optimization) |
+| **Scripting** | Fish script (different syntax) | Standard shell scripting |
+| **Community** | Growing, modern | Large, established |
+| **Best For** | Interactive use, beginners | Power users, scripting |
+
+### Terminal: Kitty vs Alacritty
+
+| Feature | Kitty | Alacritty |
+|---------|-------|-----------|
+| **GPU Acceleration** | ✅ Yes | ✅ Yes |
+| **Performance** | Excellent | Excellent |
+| **Ligatures** | ✅ Full support | ✅ Full support |
+| **Image Support** | ✅ Built-in protocol | ❌ No |
+| **Multiplexing** | ✅ Built-in tabs/splits | ❌ Use tmux/zellij |
+| **Configuration** | `kitty.conf` (custom format) | `alacritty.toml` (TOML) |
+| **Startup Time** | Very fast | Blazing fast |
+| **Extensibility** | Kittens (extensions) | Minimal by design |
+| **Resource Usage** | Low | Very low |
+| **Font Rendering** | Excellent | Excellent |
+| **Scrollback** | Built-in | Limited (use tmux) |
+| **Best For** | Feature-rich experience | Minimalist speed |
+
+### Editor: Neovim vs Doom Emacs
+
+| Feature | Neovim | Doom Emacs |
+|---------|--------|------------|
+| **Configuration Language** | Lua (modern) or Vimscript | Emacs Lisp |
+| **Modal Editing** | ✅ Native (Vim keybindings) | ✅ Via Evil mode |
+| **Plugin Ecosystem** | Large (Neovim/Vim plugins) | Massive (Emacs packages) |
+| **Startup Time** | Very fast (~50ms) | Slower (~2-3s with daemon) |
+| **Learning Curve** | Moderate to steep | Very steep |
+| **LSP Support** | ✅ Built-in, excellent | ✅ Excellent via lsp-mode |
+| **Org-mode** | ❌ Limited (orgmode.nvim) | ✅ Best-in-class |
+| **Terminal Integration** | ✅ Excellent | ✅ Good (vterm, eshell) |
+| **Git Integration** | Fugitive, LazyGit | Magit (best git interface) |
+| **Resource Usage** | Very low | Moderate |
+| **Extensibility** | High (Lua plugins) | Extremely high (Elisp) |
+| **Configuration Framework** | LazyVim, NvChad, AstroNvim | Doom, Spacemacs |
+| **Best For** | Fast editing, terminal workflow | Writing, org-mode, Lisp development |
 
 ## Installation
 
