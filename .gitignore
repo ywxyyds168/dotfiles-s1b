@@ -46,11 +46,16 @@ auth.json
 *.o
 *.so
 *.out
-dwm
-st
-slstatus
 **/dwm/dwm
 **/dwm/*.o
+**/dwm/drw.o
+**/dwm/util.o
+**/dwm/slstatus/slstatus
+**/dwm/slstatus/*.o
+**/dwm/slstatus/components/*.o
+**/dwm/release/dwm
+**/dwm/*.backup-*
+st
 
 # Obsidian vault data (too large)
 **/.config/obsidian/
