@@ -2,7 +2,7 @@
 
 set -e
 
-DOTFILES_REPO="https://github.com/ind4skylivey/dotfiles.git"
+DOTFILES_REPO="https://github.com/ind4skylivey/dotfiles-s1b.git"
 DOTFILES_DIR="$HOME/dotfiles"
 
 RED='\033[0;31m'

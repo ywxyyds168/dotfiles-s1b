@@ -132,13 +132,13 @@
 **One-line installation on a fresh Arch Linux system:**
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/ind4skylivey/dotfiles/main/bootstrap.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/ind4skylivey/dotfiles-s1b/main/bootstrap.sh)
 ```
 
 Or clone and run the installer:
 
 ```bash
-git clone https://github.com/ind4skylivey/dotfiles.git ~/dotfiles
+git clone https://github.com/ind4skylivey/dotfiles-s1b.git ~/dotfiles
 cd ~/dotfiles
 ./install.sh
 ```
@@ -174,7 +174,7 @@ yay -S fastfetch yazi-git zellij
 #### Clone Repository
 
 ```bash
-git clone https://github.com/ind4skylivey/dotfiles.git ~/dotfiles
+git clone https://github.com/ind4skylivey/dotfiles-s1b.git ~/dotfiles
 cd ~/dotfiles
 ```
 
