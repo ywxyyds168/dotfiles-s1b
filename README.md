@@ -81,6 +81,37 @@ Install the icon theme:
 yay -S mcmojave-circle-icon-theme
 ```
 
+### Qt Theme Configuration
+
+For proper theming of Qt applications (PCManFM-Qt), you need **Kvantum** and **Qt5ct**:
+
+**Required packages:**
+```bash
+sudo pacman -S kvantum qt5ct
+yay -S kvmojave-kde-theme
+```
+
+**Configuration:**
+1. **Kvantum Manager:**
+   - Theme: `KvMojave#` (dark variant)
+   - Applies Qt theming with transparency and blur effects
+
+2. **Qt5 Settings (qt5ct):**
+   - Style: `kvantum-dark`
+   - Icon Theme: `McMojave-circle-purple-dark`
+   - Color Scheme: `catppuccin-mocha-mauve`
+   - Font: `JetBrains Mono, 9pt`
+
+3. **Set environment variable** (add to your shell rc):
+   ```bash
+   export QT_QPA_PLATFORMTHEME=qt5ct
+   ```
+
+**After installation:**
+- Run `kvantummanager` to select the KvMojave# theme
+- Run `qt5ct` to verify fonts and icons
+- Restart Qt applications for changes to take effect
+
 ### Scripts
 - **lockscreen.sh** - Custom screen locking script with wallpaper support
 - **lockscreen-setup.sh** - One-time setup for lockscreen wallpapers

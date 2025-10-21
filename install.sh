@@ -59,6 +59,8 @@ PACKAGES=(
     "base-devel"
     "pcmanfm-qt"
     "file-roller"
+    "kvantum"
+    "qt5ct"
 )
 
 read -p "Install essential packages? (y/N) " -n 1 -r
@@ -76,6 +78,7 @@ AUR_PACKAGES=(
     "yazi"
     "zellij"
     "mcmojave-circle-icon-theme"
+    "kvmojave-kde-theme"
 )
 
 if command_exists yay; then
@@ -120,6 +123,8 @@ backup_if_exists "$HOME/.config/yazi"
 backup_if_exists "$HOME/.config/zellij"
 backup_if_exists "$HOME/.config/dwm"
 backup_if_exists "$HOME/.config/pcmanfm-qt"
+backup_if_exists "$HOME/.config/Kvantum"
+backup_if_exists "$HOME/.config/qt5ct"
 backup_if_exists "$HOME/.config/starship.toml"
 backup_if_exists "$HOME/.doom.d"
 backup_if_exists "$HOME/lockscreen.sh"
