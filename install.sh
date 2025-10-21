@@ -57,6 +57,8 @@ PACKAGES=(
     "starship"
     "stow"
     "base-devel"
+    "pcmanfm-qt"
+    "file-roller"
 )
 
 read -p "Install essential packages? (y/N) " -n 1 -r
@@ -73,6 +75,7 @@ AUR_PACKAGES=(
     "fastfetch"
     "yazi"
     "zellij"
+    "mcmojave-circle-icon-theme"
 )
 
 if command_exists yay; then
@@ -116,6 +119,7 @@ backup_if_exists "$HOME/.config/micro"
 backup_if_exists "$HOME/.config/yazi"
 backup_if_exists "$HOME/.config/zellij"
 backup_if_exists "$HOME/.config/dwm"
+backup_if_exists "$HOME/.config/pcmanfm-qt"
 backup_if_exists "$HOME/.config/starship.toml"
 backup_if_exists "$HOME/.doom.d"
 backup_if_exists "$HOME/lockscreen.sh"

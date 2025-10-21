@@ -62,10 +62,24 @@
 | **Micro** | Editor | Modern terminal-based text editor | `pacman` |
 | **Fastfetch** | System Info | Fast system information tool | `pacman` / AUR |
 | **Btop** | Monitor | Beautiful resource monitor | `pacman` |
+| **PCManFM-Qt** | File Manager | Lightweight Qt-based file manager with custom theme | `pacman` |
 | **Yazi** | File Manager | Blazing fast terminal file manager (Rust) | AUR (`yazi-git`) |
 | **Zellij** | Workspace | Modern terminal workspace with layout support | AUR |
 | **Cava** | Visualizer | Console-based audio visualizer | `pacman` |
 | **Flameshot** | Screenshots | Powerful screenshot tool | `pacman` |
+
+### File Manager Setup
+
+**PCManFM-Qt** is configured with:
+- **Icon Theme:** McMojave-circle-purple-dark (matches DWM purple theme)
+- **Terminal:** Kitty integration (`Super + e` to launch)
+- **Thumbnails:** Enabled for image preview
+- **Archiver:** file-roller for compressed files
+
+Install the icon theme:
+```bash
+yay -S mcmojave-circle-icon-theme
+```
 
 ### Scripts
 - **lockscreen.sh** - Custom screen locking script with wallpaper support
