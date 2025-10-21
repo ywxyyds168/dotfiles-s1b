@@ -17,6 +17,22 @@
 
 </div>
 
+## 📸 Preview
+
+<div align="center">
+
+### Desktop & Rofi
+
+<img src=".github/screenshots/desktop.png" alt="DWM Desktop" width="49%"> <img src=".github/screenshots/rofi.png" alt="Rofi Launcher" width="49%">
+
+### Tmux + Neovim & Yazi + Emacs
+
+<img src=".github/screenshots/tmux-neovim.png" alt="Tmux with Neovim" width="49%"> <img src=".github/screenshots/yazi-emacs.png" alt="Yazi with Emacs" width="49%">
+
+</div>
+
+---
+
 ## ⚙️ System Information
 
 - **OS:** Arch Linux (CachyOS)
