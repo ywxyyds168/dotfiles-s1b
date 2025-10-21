@@ -8,7 +8,7 @@
 ![Zsh](https://img.shields.io/badge/Zsh-black?style=for-the-badge&logo=zsh&logoColor=white)
 ![Neovim](https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white)
 ![Tmux](https://img.shields.io/badge/Tmux-1BB91F?style=for-the-badge&logo=tmux&logoColor=white)
-![Stars](https://img.shields.io/github/stars/ind4skylivey/dotfiles?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/ind4skylivey/dotfiles-s1b?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)
 
 ---
