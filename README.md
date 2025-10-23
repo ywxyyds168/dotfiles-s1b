@@ -21,13 +21,42 @@
 
 <div align="center">
 
-### Desktop & Rofi
+### 🎬 Setup Showcase
 
-<img src=".github/screenshots/desktop.png" alt="DWM Desktop" width="49%"> <img src=".github/screenshots/rofi.png" alt="Rofi Launcher" width="49%">
 
-### Tmux + Neovim & Yazi + Emacs
 
-<img src=".github/screenshots/tmux-neovim.png" alt="Tmux with Neovim" width="49%"> <img src=".github/screenshots/yazi-emacs.png" alt="Yazi with Emacs" width="49%">
+https://github.com/user-attachments/assets/desktop.mp4
+
+
+
+### 📸 Screenshots Gallery
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src=".github/screenshots/rofi.png" alt="Rofi Launcher"/>
+      <br/>
+      <sub><b>🚀 Rofi Application Launcher</b></sub>
+    </td>
+    <td width="50%">
+      <img src=".github/screenshots/emacs.png" alt="Doom Emacs"/>
+      <br/>
+      <sub><b>💜 Doom Emacs + Yazi Integration</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src=".github/screenshots/tmux.png" alt="Tmux + Neovim"/>
+      <br/>
+      <sub><b>🔧 Tmux + Neovim Workflow</b></sub>
+    </td>
+    <td>
+      <img src=".github/screenshots/zellij.png" alt="Zellij Workspace"/>
+      <br/>
+      <sub><b>⚡ Zellij Terminal Workspace</b></sub>
+    </td>
+  </tr>
+</table>
 
 </div>
 
