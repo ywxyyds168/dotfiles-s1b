@@ -56,6 +56,13 @@
 (setq-default vterm-shell "/bin/fish")
 (setq-default explicit-shell-file-name "/bin/fish")
 
+;; Configure eshell to use lsd for ls
+(after! eshell
+  (defun eshell/ls (&rest args)
+    "Use lsd instead of ls in eshell"
+    (eshell-external-command "lsd" args)
+    nil))
+
 ;; Disable exit confirmation
 (setq confirm-kill-emacs nil)
 
@@ -70,14 +77,15 @@
   (setq persp-auto-resume-time -1))
 
 ;; Don't split windows on emacsclient startup
-(add-hook 'server-after-make-frame-hook
-          (lambda ()
-            ;; Kill any buffer that looks like a "client" file
-            (dolist (buf (buffer-list))
-              (when (string-match-p "client" (buffer-name buf))
-                (kill-buffer buf)))
-            ;; Keep only one window
-            (delete-other-windows)))
+;; Note: Disabled because delete-other-windows causes issues with side windows
+;; (add-hook 'server-after-make-frame-hook
+;;           (lambda ()
+;;             ;; Kill any buffer that looks like a "client" file
+;;             (dolist (buf (buffer-list))
+;;               (when (string-match-p "client" (buffer-name buf))
+;;                 (kill-buffer buf)))
+;;             ;; Keep only one window
+;;             (delete-other-windows)))
 
 ;; Additional general settings
 ;; (setq auto-save-default t)
@@ -91,7 +99,9 @@
   (ivy-posframe-mode 1))
 
 (after! dired
-  (setq dired-listing-switches "-alh"))
+  (setq dired-listing-switches "-alh")
+  (setq insert-directory-program "lsd")
+  (setq dired-use-ls-dired nil))
 
 (after! exwm
   (setq exwm-workspace-number 4))
@@ -127,3 +137,17 @@
 ;; Treemacs file explorer
 ;; (after! treemacs
 ;;   (setq treemacs-width 35))
+
+;; eee.el configuration for Yazi integration
+(use-package! eee
+  :config
+  ;; Set terminal emulator (kitty is already installed)
+  (setq ee-terminal-command "kitty")
+  ;; Keybindings for ee- commands
+  (map! :leader
+        (:prefix ("e" . "external tools")
+         :desc "Open Yazi file manager" "y" #'ee-yazi
+         :desc "Open Yazi in project" "Y" #'ee-yazi-project
+         :desc "Search with ripgrep+fzf" "r" #'ee-rg
+         :desc "Find files with fzf" "f" #'ee-find
+         :desc "LazyGit" "g" #'ee-lazygit)))
