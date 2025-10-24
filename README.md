@@ -23,9 +23,9 @@
 
 ### 🎬 Setup Showcase
 
-[![Setup Video](https://raw.githubusercontent.com/ind4skylivey/dotfiles-s1b/main/.github/screenshots/desktop-preview.jpg)](https://github.com/ind4skylivey/dotfiles-s1b/raw/main/.github/screenshots/desktop.mp4)
+[![Setup Video](https://raw.githubusercontent.com/ind4skylivey/dotfiles-s1b/main/.github/screenshots/desktop-preview.jpg)](https://github.com/ind4skylivey/dotfiles-s1b/blob/main/.github/screenshots/desktop.mp4)
 
-> **🎥 Click the image above to watch the full setup showcase video**
+> **🎥 Click the image above to view the full setup showcase video in your browser**
 
 
 
